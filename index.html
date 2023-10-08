@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box1">
+        <div id="form-box">
+            <h1 id="heading">BMI Calculator</h1>
+            <form id="myForm">
+                <label for="height" id="height-label">Height (cm)</label>
+                <input type="text" name="Height" id="height">
+                <img id="height-error-svg" src="error.svg">
+                <div id="height-error">Invalid Input</div>
+
+                <label for="height" id="weight-label">Weight (kg)</label>
+                <input type="text" name="Weight" id="weight">
+                <img id="weight-error-svg" src="error.svg">
+                <div id="weight-error">Invalid Input</div>
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+    </div>
+    <div id="box2">
+        <div id="meter-box">
+            <div id="p1" class="p">9</div>
+            <div id="p2" class="p">18</div>
+            <div id="p3" class="p">27</div>
+            <div id="meter">
+                <div id="meter-color"></div>
+                <div id="inner">
+                    <div id="needle">
+                        <div id="needle-mid"></div>
+                        <div id="triangle"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 id="bmi">--</h1>
+            <h2 id="bmi_status">Overweight</h2>
+            <div id="overflow"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
